@@ -1,0 +1,23 @@
+.homeNavbar{
+    display: flex;
+    align-items: center;
+    &__buttonSection{
+        display: none;
+        margin-top: 0.5rem;
+        &__text{
+            font-weight: 500;
+            font-size: 1.1rem;
+            margin-left: 1rem;
+        }
+    }
+    
+}
+@media (min-width: 768px) {
+  .homeNavbar{
+      justify-content: space-between;
+      &__buttonSection{
+          display: flex;
+          align-items: center;
+      }
+  }
+}

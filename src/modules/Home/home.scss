@@ -1,0 +1,45 @@
+@import '../../variable.scss';
+.home {
+  &__heroSection {
+    display: flex;
+    // align-items: center;
+    text-align: center;
+    &__intro {
+      &__heading {
+        font-size: 20px;
+        line-height: 35px;
+        margin-bottom: 20px;
+        margin-top: 50px;
+        font-weight: 700;
+      }
+      &__desc{
+        font-size: 12px;
+        line-height: 30px;
+        margin-bottom: 30px;
+      }
+    }
+    &__image {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+    .home{
+        &__heroSection{
+            &__image{
+                display: block;
+            }
+        }
+    }
+}
+.homeButton {
+  background-color: $purple;
+  outline: none;
+  border: none;
+  color: $white;
+  font-family: 'Montserrat', sans-serif;
+  padding: 0.5rem 1.2rem;
+  border-radius: 0.3rem;
+  font-size: 1.1rem;
+}
